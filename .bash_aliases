@@ -20,8 +20,10 @@ alias monip='curl eth0.me'
 alias jirc='ssh leopoldine@irc-server'
 
 alias phpstormserver='sudo phpstormserver'
-alias pacall='sudo php app/console assetic:dump && sudo php app/console cache:clear -e prod && sudo php app/console cache:clear -e dev && sudo php app/console cache:warmup -e prod && sudo php app/console cache:warmup -e dev && sudo chmod -R 777 ./app/cache/'
 alias pacus='sudo php app/console doctrine:schema:update --dump-sql'
 alias pacuf='sudo php app/console doctrine:schema:update --force'
 alias rmcache='sudo rm -rf ./app/cache/dev ./app/cache/prod'
+alias pacall='rmcache && sudo php app/console assetic:dump && sudo php app/console cache:clear -e dev && sudo php app/console cache:clear -e prod && sudo php app/console cache:warmup -e dev && sudo php app/console cache:warmup -e prod && sudo chmod -R 777 ./app/cache/'
+alias tclog='tail ./app/logs/prod-critical.log'
+alias cdlog='cd ./app/logs/'
 
