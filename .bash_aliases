@@ -18,6 +18,7 @@ alias etu='sudo ip link set enp6s0 up'
 alias dhcp='sudo dhcpcd enp6s0'
 alias monip='curl eth0.me'
 alias jirc='ssh leopoldine@irc-server'
+alias service='sudo systemctl start httpd mariadb cronie'
 
 alias phpstormserver='sudo phpstormserver'
 alias pacus='sudo php app/console doctrine:schema:update --dump-sql'
