@@ -10,3 +10,4 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 PS1='[\u@\h \W]\$ '
+export EDITOR="nano"
