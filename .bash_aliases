@@ -27,4 +27,4 @@ alias rmcache='sudo rm -rf ./app/cache/dev ./app/cache/prod'
 alias pacall='rmcache && sudo php app/console assetic:dump && sudo php app/console cache:clear -e dev && sudo php app/console cache:clear -e prod && sudo php app/console cache:warmup -e dev && sudo php app/console cache:warmup -e prod && sudo chmod -R 777 ./app/cache/'
 alias tclog='tail ./app/logs/prod-critical.log'
 alias cdlog='cd ./app/logs/'
-
+alias gitsen='git push sensiolabs +host-dev:master'
