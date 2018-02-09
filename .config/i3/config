@@ -49,10 +49,10 @@ bindsym $mod+l focus up
 bindsym $mod+m focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+#bindsym $mod+Left focus left
+#bindsym $mod+Down focus down
+#bindsym $mod+Up focus up
+#bindsym $mod+Right focus right
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -61,10 +61,10 @@ bindsym $mod+Shift+l move up
 bindsym $mod+Shift+m move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+#bindsym $mod+Shift+Left move left
+#bindsym $mod+Shift+Down move down
+#bindsym $mod+Shift+Up move up
+#bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+h split h
@@ -137,10 +137,10 @@ mode "resize" {
         bindsym m resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 1 px or 1 ppt
-        bindsym Down resize grow height 1 px or 1 ppt
-        bindsym Up resize shrink height 1 px or 1 ppt
-        bindsym Right resize grow width 1 px or 1 ppt
+        #bindsym Left resize shrink width 1 px or 1 ppt
+        #bindsym Down resize grow height 1 px or 1 ppt
+        #bindsym Up resize shrink height 1 px or 1 ppt
+        #bindsym Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
@@ -170,3 +170,9 @@ bindsym Mod4+c exec gnome-calculator
 
 # feh wallpaper 
 exec --no-startup-id feh --bg-scale ~/Images/wallpaper.png
+
+# set border size to 1 pixel for all window
+for_window [class="^.*"] border pixel 1
+
+# set no border for a fullscreen window
+hide_edge_borders smart
