@@ -9,7 +9,7 @@ appendpath () {
         *:"$1":*)
             ;;
         *)
-            PATH="$PATH:$1"
+            PATH="${PATH:+$PATH:}$1"
     esac
 }
 
@@ -38,7 +38,3 @@ unset TERMCAP
 
 # Man is much better than us at figuring this out
 unset MANPATH
-
-# Disable terminal bip
-setterm -blength 0
-
