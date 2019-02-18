@@ -13,4 +13,10 @@ cd /mnt
 mkdir dd
 mkdir usb
 
+cd /opt
+sudo chown -R my_user:my_user ../opt
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
 
+trizen -Syu smartgit google-chrome
